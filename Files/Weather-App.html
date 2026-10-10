@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: hsl(0, 0%, 95%);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .weatherform {
+            margin: 20px;
+        }
+        #enteredcity {
+            padding: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        button[type="submit"]{
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 2rem;
+            background-color: rgb(85, 255, 47);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        button[type="submit"]:hover {
+            background-color: rgb(43, 112, 27);
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgb(175, 175, 242), rgb(245, 217, 164));
+            padding: 50px ;
+            box-shadow: 2px 2px 5px rgba(36, 35, 35, 0.541);
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 4px 2px 5px rgb(226, 155, 155);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            opacity: 60%;
+        }
+
+        p:hover {
+            opacity: 60%;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        .cityDisplay, .tempDisplay {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: hsla(0,0%, 0%, 0.75);
+            margin-bottom: 25px;
+
+        }
+
+        .humidityDisplay {
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .descWeather {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .weatheremoji {
+            margin: 0;
+            font-size: 7.5rem;
+        }
+
+        .errordisplay {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: hsla(0,0%, 0%, 0.75);
+
+        }
+    </style>
+    <form class="weatherform">
+        <input type="text" id="enteredcity" placeholder="Enter City">
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none;">
+    </div>
+
+    <script src="Weather-App.js"></script>
+</body>
+</html>

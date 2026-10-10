@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #calctemp:hover {
+            opacity: 75%;
+        }
+    </style>
+
+    <div style="border: 3px solid black; border-radius: 50px; padding-bottom: 23px; text-align: center;">
+        <h1 style="text-align: center; font-size: 2em; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Temperature Converter</h1><br>
+
+        <input type="number" style="text-align: center; margin-top: -23px; border: 5px solid black; font-size: 30px; border-radius: 10px;;" id="temp"><br><br>
+
+        <input type="radio"  name="op" id="celtofar">
+        <label style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 23px;">Celsius to Farhen-heit</label><br>
+        <input type="radio"  name="op" id="fartocel">
+        <label style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 23px;">Farhen-heit to Celsius</label><br><br>
+
+        <button style=" border: 3px solid black; background-color: lightcoral; border-radius: 50px; padding: 10px;" id="calctemp">Calculate Temperature</button><br><br>
+        <label id="value" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></label>
+
+    </div>
+
+    <script src="Temperature-Converter-Pro.js"></script>
+</body>
+</html>

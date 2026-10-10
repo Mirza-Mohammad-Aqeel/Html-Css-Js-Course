@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #submitname:hover {
+            opacity: 75%;
+        }
+        #roll:hover {
+            opacity: 75%;
+        }
+    </style>
+
+    <label style="margin-left: 20px;">Enter your Name</label>
+    <input type="text" id="urname" style="border: 3px solid black; background-color: rgb(107,107,100); margin-top: 20px; margin-left: 5px;">
+    <br><br>
+
+    <button id="submitname" style="margin-left: 20px; border-radius: 50px; font-size: 1em; background-color: rgb(228, 241, 177); padding: 10px; border: 3px solid black;">Submit</button>
+    <br><br>
+
+    <h1 id="greeting" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;"></h1>
+    <br><br>
+
+    <label id="label" style="margin-left: 20px; display: none;">Enter your Number</label>
+    <input type="text" id="urnum" style="border: 3px solid black; background-color: rgb(107,107,100); margin-top: 20px; margin-left: 5px; display: none;">
+    <br><br>
+
+    <button id="roll" style="margin-left: 20px; border-radius: 50px; font-size: 1em; background-color: lightcoral; padding: 10px; border: 3px solid black; display: none;">Roll</button>
+    <label id="value" style="margin-left: 20px;"></label>
+    
+    <script src="Dice-Roller-Guesser.js"></script>
+</body>
+</html>

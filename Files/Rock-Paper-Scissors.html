@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <style>
+        button {
+            width: 200px;
+            height: 200px;
+            border: 4px solid black;
+            border-radius: 50px;
+            font-size: 6rem;
+            background-color: lightblue;
+        }
+
+        button:hover {
+            filter: brightness(0.8);
+            cursor: pointer;
+        }
+
+        #container {
+            border: 4px solid black;
+            border-radius: 100px;
+            margin: 30px;
+            padding: 30px;
+
+        }
+
+        .mylabel {
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        h1:hover {
+            opacity: 60%;
+            cursor: pointer;
+        }
+
+        label:hover {
+            opacity: 60%;
+            cursor: pointer;
+        }
+
+        .score {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .score:hover {
+            opacity: 60%;
+            cursor: pointer;            
+        }
+    </style>
+
+    <div id="container">
+
+        <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Rock = Paper = Scissors</h1>
+        <label id="playerscore" class="score"></label>
+        <label id="computerscore" class="score"></label>
+
+        
+        <div style="display: flex; flex-direction: row; gap: 40px;  justify-content: center;">
+            <button id="rock" onclick="playGame('Rock')">🪨</button>
+            <button id="paper" onclick="playGame('Paper')">📜</button>
+            <button id="scissors" onclick="playGame('Scissors')">✂️</button>
+            <br><br>
+        </div>
+        <br>
+        
+        <div style="display: flex; flex-direction: column; text-align: center;">
+
+            <label id="player" class="mylabel"></label><br>
+            <label id="computer" class="mylabel"></label><br>
+            <br>
+
+            <label id="status" class="mylabel"></label>
+
+
+        </div>
+    </div>
+
+    <script src="Rock-Paper-Scissors.js"></script>
+</body>
+</html>

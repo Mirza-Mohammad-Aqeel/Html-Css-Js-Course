@@ -1,0 +1,22 @@
+
+[{
+    "name":"Aqeel",
+    "age":14,
+    "religion":"Islam",
+    "isstudent":true,
+    "hobbies":["Coding","Painting"]
+},
+{
+    "name":"Bilal",
+    "age":23,
+    "religion":"Christianity",
+    "isstudent":false,
+    "hobbies":["Cooking","Writing"]
+},
+{
+    "name":"Luna",
+    "age":8,
+    "religion":"Islam",
+    "isstudent":true,
+    "hobbies":["Painting","Cooking"]
+}]

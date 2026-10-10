@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #submitgift:hover {
+            opacity: 75%;
+        }
+    </style>
+    <form>
+        <label style="margin-left: 20px;">Enter your Item Name </label>
+        <input type="text" id="itemname" style="background-color: rgb(107,107,100); border: 3px solid black; margin-top: 20px;">
+        <br><br>
+
+        <label style="margin-left: 20px;">Will the gift Be wrapped</label>
+        <input type="checkbox" id="wrappedornot">
+        <br><br>
+
+        <label style="margin-left: 20px;">Choose a Payment method</label>
+        <br><br>
+
+        <label style="margin-left: 20px;">Paypal</label>
+        <input type="radio" id="paypal" name="pl"><br>
+        <label style="margin-left: 20px;">Cash</label>
+        <input type="radio" id="cash" name="pl"><br>
+        <label style="margin-left: 20px;">Card</label>
+        <input type="radio" id="card" name="pl"><br>
+        <br><br>
+
+        <button id="submitgift" style="margin-left: 20px; padding: 10px; background-color: lightcoral; border: 3px solid black; border-radius: 50px;">Submit Gift</button>
+        <br><br>
+
+    </form>
+
+    <label style="margin-left: 20px;" id="numberone"></label>
+    <label style="margin-left: 20px;" id="numbertwo"></label>
+    <label style="margin-left: 20px;" id="numberthree"></label>
+
+    <script src="Order-Form-Summary.js"></script>
+</body>
+</html>

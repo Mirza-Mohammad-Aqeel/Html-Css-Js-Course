@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        console.log(navigator.cookieEnabled);
+
+        document.cookie = "age=14; expires=Wednesday, 9 September 2026; path=/"
+        console.log(document.cookie)
+
+        function setCookie(name, value, daystoLive) {
+            const date = new Date();
+            date.setTime(date.getTime() + daystoLive * 24 * 60 * 60 * 1000);
+            let expires = "expires=" + date.toUTCString();
+            document.cookie = `${name}=${value}; ${expires}; path="/`
+        }
+
+        function deleteCookie (name) {
+            setCookie(name, null, null);
+        }
+
+        function getCookie(name) {
+            const cDecoded = decodeURIComponent(document.cookie);
+            const c_array = cDecoded.split("; ");
+            let result = null;
+
+            c_array.forEach(element => {
+                if (element.indexOf(name) == 0) {
+                    result = element.substring(name.length + 1)
+                }
+            })
+        }
+    </script>
+</body>
+</html>

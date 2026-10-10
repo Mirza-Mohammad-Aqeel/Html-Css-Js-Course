@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        #submitname:hover {
+            opacity: 75%;
+        }
+        #calcfinalbill:hover {
+            opacity: 75%;
+        }
+
+    </style>
+
+    <label style="margin-left: 20px;">Enter your Name</label>
+    <input type="text" id="enteredname" style="background-color: rgb(107,107,108); border: 3px solid black; margin-top: 20px; margin-left: 20px;">
+    <br><br>
+
+    <button style="margin-left: 20px; border: 3px solid black; background-color: lightpink;" id="submitname">Submit</button>
+
+    <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;" id="welcome"></h1>
+    <br>
+
+    <label style="margin-left: 20px; display: none;" id="billamount">Enter your Bill Amount</label>
+    <input type="text" id="enteredbillam" style="background-color: rgb(107,107,108); border: 3px solid black; margin-left: 20px; display: none;">
+    <br><br>
+
+    <label style="margin-left: 20px; display: none;" id="tipperc">Enter your Tip Percentage</label>
+    <input type="text" id="enteredtipperc" style="background-color: rgb(107,107,108); border: 3px solid black; margin-left: 20px; display: none;">
+    <br><br>
+
+    <button style="margin-left: 20px; border: 3px solid black; background-color: rgb(173, 230, 16); display: none;" id="calcfinalbill">Calculate Final Bill</button>
+    <br><br>
+
+    <label id="finalanswer" style="margin-left: 20px;"></label>
+
+
+
+    <script src="Tip-Calculator.js"></script>
+</body>
+</html>

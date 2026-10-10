@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        #giveurname:hover {
+            opacity: 75%;
+        }
+        #evenorodd:hover {
+            opacity: 75%;
+        }
+        #posorneg:hover {
+            opacity: 75%;
+        }
+    </style>
+    <label style="margin-left: 20px;">Enter your Name</label>
+    <input type="text" id="the_name_user" style="margin-left: 20px; margin-top: 20px; border: 3px solid black; background-color: rgb(107,107,108);">
+    <br><br>
+
+    <button id="giveurname" style="margin-left: 20px; border: 3px solid black; background-color: lightskyblue;">Submit Name</button>
+    <br><br>
+
+    <h1 id="greetuser" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;"></h1>
+    <br><br>
+
+    <label style="margin-left: 20px; display: none;" id="asknum">Enter your Number</label>
+    <input type="text" id="urnumber" style="margin-left: 20px; border: 3px solid black; background-color: rgb(107,107,108); display: none;">
+    <br><br>
+
+    <button id="evenorodd" style="margin-left: 20px; border: 3px solid black; background-color: rgb(236, 177, 159); display: none;">Check if Even or Odd</button>
+    <button id="posorneg" style="margin-left: 20px; border: 3px solid black; background-color: rgb(159, 240, 193); display: none;">Check if Positive or Negative</button>
+    <br><br>
+
+    <label id="finalresponse" style="margin-left: 20px;"></label>
+    <br>
+
+
+    <script src="Number-Checker.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #submitname:hover {
+            opacity: 75%;
+        }
+
+        #calcbmi:hover {
+            opacity: 75%;
+        }
+    </style>
+    <label style="margin-left: 20px;">Enter your Name</label>
+    <input type="text" id="name" style="margin-top: 20px; margin-left: 9px; border: 3px solid black; background-color: rgb(107,107,100);">
+    <br><br>
+
+    <button id="submitname" style="margin-left: 20px; border-radius: 50px; padding: 10px; background-color: lightcoral; border: 3px solid black;">Submit Name</button>
+    <br><br>
+
+    <h1 id="greeting" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;"></h1>
+    <br><br>
+
+    <label style="margin-left: 20px; display: none;" id="labelone">Enter your Weight in Kg</label>
+    <input type="text" id="weight" style="margin-top: 20px; margin-left: 9px; border: 3px solid black; background-color: rgb(107,107,100); display: none;"><br>
+
+    <label style="margin-left: 20px; display: none;" id="labeltwo">Enter your Height in cm</label>
+    <input type="text" id="height" style="margin-top: 20px; margin-left: 9px; border: 3px solid black; background-color: rgb(107,107,100); display: none;"><br>
+    <br>
+
+    <button id="calcbmi" style="margin-left: 20px; border-radius: 50px; padding: 10px; background-color: rgb(223, 160, 248); border: 3px solid black; display: none;">Calculate Bmi</button>
+    <br><br>    
+
+    <label id="bmivalue" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;"></label><br>
+    <label id="status" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-left: 20px;"></label>
+
+    <script src="Bmi-Calculator.js"></script>
+</body>
+</html>
