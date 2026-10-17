@@ -3,10 +3,10 @@ const person1 = {
     name:"Aqeel",
     age:14,
     religion:"Islam",
-    employed = true,
-    sayhello = function() {console.log("Assalam Alykum")},
+    employed :true,
+    sayhello : function() {console.log("Assalam Alykum")},
 
-    display_info = function () {
+    display_info :function () {
 
         console.log(`My name is ${this.name}`),
         console.log(`My age is ${this.age}`),
@@ -21,10 +21,10 @@ const person2 = {
     name:"Ibaad",
     age:8,
     religion:"Christianity",
-    employed = false,
-    sayhello = function() {console.log("Hello, May God Bless You")},
+    employed :false,
+    sayhello : function() {console.log("Hello, May God Bless You")},
 
-    display_info = function () {
+    display_info : function () {
 
         console.log(`My name is ${this.name}`),
         console.log(`My age is ${this.age}`),
@@ -40,10 +40,10 @@ const person3 = {
     name:"Ghanim",
     age:20,
     religion:"Judaism",
-    employed = true,
-    sayhello = function() {console.log(`Shalom Aleykhum, I am ${this.name}`)},
+    employed : true,
+    sayhello : function() {console.log(`Shalom Aleykhum, I am ${this.name}`)},
 
-    display_info = function () {
+    display_info : function () {
 
         console.log(`My name is ${this.name}`),
         console.log(`My age is ${this.age}`),

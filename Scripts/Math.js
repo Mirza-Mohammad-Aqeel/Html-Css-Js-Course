@@ -10,5 +10,5 @@ let floored = Math.floor(y)
 let powered = Math.pow(9,y)
 let square_root = Math.sqrt(x)
 
-let min = Math.max(x,y)
-let min = Math.min(x,y)
+let minimum = Math.max(x,y)
+let maximum = Math.min(x,y)
