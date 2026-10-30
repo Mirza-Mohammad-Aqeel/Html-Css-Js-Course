@@ -1,6 +1,6 @@
 # Html Css Js Course
 
-A Course, showcasing my Journey to Learn Html, Css & Js
+A Course, Showcasing my Journey to Learn Html, Css & Js
 
 # Practice Projects
 
